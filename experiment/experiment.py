@@ -18,7 +18,7 @@ import gc
 
 begining_timestamp = 1589540396
 ending_timestamp = 1592265346
-tx_file_path = "/data/summary_txs_2020_June"
+tx_file_path = "data/summary_txs_2020_June"
 
 global all_txs
 all_txs = {}
