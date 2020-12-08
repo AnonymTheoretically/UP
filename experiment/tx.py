@@ -5,3 +5,12 @@ class Tx():
         self.fee = fee
         self.feerate = fee/size
         self.serial = serial
+
+    def __eq__(self, other):
+        return self.serial == other.serial
+
+    def __lt__(self, other):
+        return (self.serial < other.serial)
+
+    def __gt__(self, other):
+        return (self.serial > other.serial)
