@@ -1,3 +1,8 @@
+import time
+import copy
+from mempool import Mempool
+import logging, sys
+
 class Block():
     def __init__(self, miner, txs, timestamp, parent_block, txfees, size, height, type = "forked", mempool_index = -1):
         self.miner = miner
